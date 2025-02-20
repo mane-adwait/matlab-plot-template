@@ -14,7 +14,9 @@ cFig = gcf; % This makes the following commands modular i.e. the figure
 % Set the figure position using the syntax [left bottom width height].
 cFig.Units = 'normalized'; cFig.OuterPosition = [0.5 0.5 0.5 0.5];
 % Another way to specify figure location. Acceptable arguments include:
-% Eight compass directions: north, northeast, east, etc.
+% Eight compass directions: 'north', 'northeast', 'east', etc.
+% 'center' – centers the figure in the middle of the screen.
+% 'onscreen' – moves the figure fully onto the screen if it's partially off-screen.
 % movegui(cFig,'northeast'); 
 
 cFig.Color = 'white'; % I think the 'no background' option appears black in
