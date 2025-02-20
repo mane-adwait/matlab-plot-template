@@ -13,7 +13,8 @@ cFig = gcf; % This makes the following commands modular i.e. the figure
 
 % Set the figure position using the syntax [left bottom width height].
 cFig.Units = 'normalized'; cFig.OuterPosition = [0.5 0.5 0.5 0.5];
-% movegui(cFig,'northeast'); % Another way to specify figure location.
+% Another way to specify figure location. 
+% movegui(cFig,'northeast'); 
 
 cFig.Color = 'white'; % I think the 'no background' option appears black in
 % the Matlab environment, but not when exported. White background can be
