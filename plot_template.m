@@ -83,3 +83,16 @@ legend({    'dq1',...
     'Interpreter','latex','FontSize',20);
 xlabel('Time (s)', 'Interpreter','latex','FontSize',20);
 
+%% Plot the control signal in a separate figure.
+
+figure(10); cFig = gcf; movegui(cFig,'northwest');
+
+% Set the axes properties
+cAx = gca;
+lineColors = linspecer(numPlots);
+axis on; cAx.TickLabelInterpreter = 'latex';
+cAx.ColorOrder = lineColors; cAx.FontSize = 20;
+hold on;
+
+plot(t,u, 'LineWidth', 1.5); legend('u1','u2'); grid on;
+xlabel('Time (s)', 'Interpreter','latex','FontSize',20);
