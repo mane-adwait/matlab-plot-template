@@ -54,3 +54,21 @@ for im = 1:draw.m
 
     end
 end
+
+%% Plot the states on subplots.
+
+subplot(draw.m,draw.n,1); 
+% This title appears bold. Subplot titles can be added after the plot
+% command.
+% title(['States (', fileName, ' ', fileVersion, ')'], ...
+%     'Interpreter','latex','FontSize',18);
+title('States', ...
+    'Interpreter','latex','FontSize',18); 
+plot(   t, z(1:2,:), ...
+    'LineWidth', 1.5); grid on;
+ylabel('rad','Interpreter','latex','FontSize',20);
+legend({    'q1',...
+    'q2',...
+    },'Location','eastoutside',...
+    'Interpreter','latex','FontSize',20);
+
