@@ -32,3 +32,25 @@ cFig.Color = 'white'; % I think the 'no background' option appears black in
 %   5   6 ...
 
 % -------------------------------------------------------------------------
+
+draw.m = 2; draw.n = 1; % Select the subplot grid size.
+
+%% Set the axes properties.
+
+for im = 1:draw.m
+    for in = 1:draw.n
+
+        numPlots = 2; % Select the number of plots on each subplot.
+
+        subplot(draw.m,draw.n,im); % Select the subplot axes.
+        % Note: update the last argument if plotting more than one column.
+
+        % Set the axes properties
+        cAx = gca;
+        lineColors = linspecer(numPlots);
+        axis on; cAx.TickLabelInterpreter = 'latex';
+        cAx.ColorOrder = lineColors; cAx.FontSize = 20;
+        hold on;
+
+    end
+end
