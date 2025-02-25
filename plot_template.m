@@ -20,7 +20,7 @@ cFig.Units = 'normalized'; cFig.OuterPosition = [0.5 0.5 0.5 0.5];
 % movegui(cFig,'northeast'); 
 
 cFig.Color = 'white'; % I think the 'no background' option appears black in
-% the Matlab environment, but not when exported. White background can be
+% the Matlab environment, but not when exported. The white background can be
 % removed in Inkscape.
 
 
